@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# Data
+data/*.csv
+!data/.gitkeep
+
+# Models
+models/
+!models/.gitkeep
+
+# Logs
+logs/
+*.log
+
+# Checkpoints
+checkpoints/
+
+# Airflow
+airflow/logs/
+airflow/plugins/
+airflow/dags/__pycache__/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Spark
+spark-warehouse/
+metastore_db/
+
+# Docker
+.dockerignore
+
+# Temporary files
+*.tmp
+*.pid
+
