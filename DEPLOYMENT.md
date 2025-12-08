@@ -35,9 +35,9 @@
 
 ```bash
 # Download Spark
-wget https://archive.apache.org/dist/spark/spark-3.3.0/spark-3.3.0-bin-hadoop3.tgz
-tar -xzf spark-3.3.0-bin-hadoop3.tgz
-sudo mv spark-3.3.0-bin-hadoop3 /opt/spark
+wget https://archive.apache.org/dist/spark/spark-4.0.1/spark-4.0.1-bin-hadoop3.tgz
+tar -xzf spark-4.0.1-bin-hadoop3.tgz
+sudo mv spark-4.0.1-bin-hadoop3 /opt/spark
 
 # Thiết lập biến môi trường
 echo 'export SPARK_HOME=/opt/spark' >> ~/.bashrc
