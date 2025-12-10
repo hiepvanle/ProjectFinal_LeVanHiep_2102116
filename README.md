@@ -109,6 +109,11 @@ python3 data_split.py
 
 Trên máy Spark:
 ```bash
+python3 spark_training.py data/train_data.csv models/heart_failure_model
+```
+
+Hoặc sử dụng spark-submit:
+```bash
 $SPARK_HOME/bin/spark-submit \
   --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.3.0 \
   spark_training.py \
@@ -120,14 +125,19 @@ $SPARK_HOME/bin/spark-submit \
 
 Trên máy Spark:
 ```bash
-$SPARK_HOME/bin/spark-submit \
-  --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.3.0 \
-  spark_streaming.py \
+python3 spark_streaming.py
+```
+
+Hoặc chỉ định các tham số:
+```bash
+python3 spark_streaming.py \
   models/heart_failure_model \
   heart_failure_input \
   heart_failure_predictions \
-  kafka-server-ip:9092
+  192.168.80.88:9092
 ```
+
+Lưu ý: Mặc định sử dụng Kafka broker tại `192.168.80.88:9092`
 
 #### Bước 5: Chạy Stream Simulator
 
