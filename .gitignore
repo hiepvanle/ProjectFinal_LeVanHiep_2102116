@@ -51,3 +51,4 @@ metastore_db/
 *.tmp
 *.pid
 
+spark-4.0.1-bin-hadoop3.tgz
