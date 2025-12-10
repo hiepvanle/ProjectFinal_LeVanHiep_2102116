@@ -11,7 +11,7 @@ from kafka import KafkaProducer
 import sys
 import os
 
-def create_producer(bootstrap_servers='localhost:9092'):
+def create_producer(bootstrap_servers='192.168.80.88:9092'):
     """Tạo Kafka Producer"""
     try:
         producer = KafkaProducer(
@@ -27,7 +27,7 @@ def create_producer(bootstrap_servers='localhost:9092'):
 
 def send_streaming_data(stream_file='data/stream_data.csv', 
                        kafka_topic='heart_failure_input',
-                       bootstrap_servers='localhost:9092',
+                       bootstrap_servers='192.168.80.88:9092',
                        delay_seconds=2):
     """
     Gửi dữ liệu streaming đến Kafka
@@ -107,7 +107,7 @@ if __name__ == "__main__":
                        help='File chứa dữ liệu streaming')
     parser.add_argument('--kafka-topic', default='heart_failure_input',
                        help='Topic Kafka để gửi dữ liệu')
-    parser.add_argument('--bootstrap-servers', default='localhost:9092',
+    parser.add_argument('--bootstrap-servers', default='192.168.80.88:9092',
                        help='Địa chỉ Kafka brokers')
     parser.add_argument('--delay', type=float, default=2.0,
                        help='Delay giữa các dòng (giây)')

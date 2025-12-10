@@ -263,7 +263,7 @@ Từ máy demo:
 cd PROJECTFINAL_LEVANHIEP_2102116
 python3 visualization_consumer.py \
   --kafka-topic heart_failure_predictions \
-  --bootstrap-servers kafka-server-ip:9092
+  --bootstrap-servers 192.168.80.88:9092
 ```
 
 ## Troubleshooting
