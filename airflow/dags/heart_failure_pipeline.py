@@ -19,7 +19,7 @@ import time
 # Đường dẫn dự án
 PROJECT_DIR = "/home/labsit28/Downloads/PROJECTFINAL_LEVANHIEP_2102116"
 SPARK_HOME = os.environ.get('SPARK_HOME', '/opt/spark')
-KAFKA_SERVERS = os.environ.get('KAFKA_SERVERS', 'localhost:9092')
+KAFKA_SERVERS = os.environ.get('KAFKA_SERVERS', '192.168.80.88:8080')
 
 default_args = {
     'owner': 'airflow',
