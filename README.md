@@ -146,7 +146,7 @@ Trên máy demo:
 python3 stream_simulator.py \
   --stream-file data/stream_data.csv \
   --kafka-topic heart_failure_input \
-  --bootstrap-servers kafka-server-ip:9092 \
+  --bootstrap-servers 192.168.80.88:9092 \
   --delay 2
 ```
 
@@ -156,7 +156,7 @@ Trên máy demo:
 ```bash
 python3 visualization_consumer.py \
   --kafka-topic heart_failure_predictions \
-  --bootstrap-servers kafka-server-ip:9092
+  --bootstrap-servers 192.168.80.88:9092
 ```
 
 ### Cách 2: Sử dụng Airflow (Khuyến nghị)
