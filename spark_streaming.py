@@ -48,7 +48,7 @@ def define_schema():
 def process_streaming(spark, model, 
                      input_topic='heart_failure_input',
                      output_topic='heart_failure_predictions',
-                     kafka_bootstrap_servers='192.168.80.88:9092',
+                     kafka_bootstrap_servers='192.168.80.131:9092',
                      checkpoint_location='checkpoints/streaming'):
     """
     Xử lý streaming: đọc từ Kafka, dự đoán, gửi kết quả về Kafka
@@ -163,7 +163,7 @@ if __name__ == "__main__":
     model_path = sys.argv[1] if len(sys.argv) > 1 else 'models/heart_failure_model'
     input_topic = sys.argv[2] if len(sys.argv) > 2 else 'heart_failure_input'
     output_topic = sys.argv[3] if len(sys.argv) > 3 else 'heart_failure_predictions'
-    kafka_servers = sys.argv[4] if len(sys.argv) > 4 else '192.168.80.88:9092'
+    kafka_servers = sys.argv[4] if len(sys.argv) > 4 else '192.168.80.131:9092'
     
     spark = create_spark_session()
     

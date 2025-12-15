@@ -8,10 +8,10 @@ PROJECT_DIR = "/home/labsit28/Downloads/PROJECTFINAL_LEVANHIEP_2102116"
 
 # Spark Configuration
 SPARK_HOME = "/opt/spark"  # Cập nhật đường dẫn Spark của bạn
-SPARK_MASTER = "spark://192.168.80.88:7077"  # Hoặc "local[*]" cho local
+SPARK_MASTER = "spark://192.168.80.113:7077"  # Hoặc "local[*]" cho local
 
 # Kafka Configuration
-KAFKA_BOOTSTRAP_SERVERS = "localhost:9092"  # Cập nhật IP máy Kafka
+KAFKA_BOOTSTRAP_SERVERS = "192.168.80.131:9092"  # Cập nhật IP máy Kafka
 KAFKA_INPUT_TOPIC = "heart_failure_input"
 KAFKA_OUTPUT_TOPIC = "heart_failure_predictions"
 
@@ -27,7 +27,7 @@ STREAM_DELAY_SECONDS = 2.0  # Delay giữa các records (giây)
 AIRFLOW_DAG_ID = "heart_failure_pipeline"
 
 # Machine IPs (cập nhật theo môi trường của bạn)
-SPARK_SERVER_IP = "192.168.80.178"  # IP máy Spark
-KAFKA_SERVER_IP = "192.168.80.88"  # IP máy Kafka
-AIRFLOW_SERVER_IP = "192.168.80.177"  # IP máy Airflow
+SPARK_SERVER_IP = "192.168.80.113"  # IP máy Spark
+KAFKA_SERVER_IP = "192.168.80.131"  # IP máy Kafka
+AIRFLOW_SERVER_IP = "192.168.80.130"  # IP máy Airflow
 
