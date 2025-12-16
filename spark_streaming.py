@@ -77,6 +77,7 @@ def process_streaming(spark, model,
         .option("kafka.bootstrap.servers", kafka_bootstrap_servers) \
         .option("subscribe", input_topic) \
         .option("startingOffsets", "latest") \
+        .option("failOnDataLoss", "false") \
         .load()
     
     # Parse JSON từ Kafka
