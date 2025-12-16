@@ -20,7 +20,7 @@ sleep 10
 # Kiểm tra Kafka
 if docker ps | grep -q kafka; then
     echo "Kafka đã khởi động thành công!"
-    echo "Kafka UI có thể truy cập tại: http://192.168.80.131:8080"
+    echo "Kafka UI có thể truy cập tại: http://192.168.80.157:8080"
 else
     echo "Lỗi: Kafka chưa khởi động được"
     exit 1

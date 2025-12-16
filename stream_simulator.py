@@ -11,7 +11,7 @@ from kafka import KafkaProducer
 import sys
 import os
 
-def create_producer(bootstrap_servers='192.168.80.131:9092'):
+def create_producer(bootstrap_servers='192.168.80.157:9092'):
     """Tạo Kafka Producer"""
     try:
         producer = KafkaProducer(
