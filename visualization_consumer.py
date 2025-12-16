@@ -15,7 +15,7 @@ import time
 
 class PredictionVisualizer:
     def __init__(self, kafka_topic='heart_failure_predictions', 
-                 bootstrap_servers='192.168.80.131:9092',
+                 bootstrap_servers='192.168.80.157:9092',
                  max_points=50):
         self.kafka_topic = kafka_topic
         self.bootstrap_servers = bootstrap_servers
@@ -198,7 +198,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Visualization consumer cho Heart Failure predictions')
     parser.add_argument('--kafka-topic', default='heart_failure_predictions',
                        help='Topic Kafka để đọc kết quả')
-    parser.add_argument('--bootstrap-servers', default='192.168.80.131:9092',
+    parser.add_argument('--bootstrap-servers', default='192.168.80.157:9092',
                        help='Địa chỉ Kafka brokers')
     parser.add_argument('--max-points', type=int, default=50,
                        help='Số điểm tối đa hiển thị trên biểu đồ')
